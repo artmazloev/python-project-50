@@ -14,12 +14,12 @@ gendiff:
 	uv run gendiff
 
 lint:
-    ruff check gendiff
+	ruff check gendiff
 
 lint-fix:
-    ruff check gendiff --fix
+	ruff check gendiff --fix
 
 test:
-    pytest
+	pytest
 
 check: lint test
