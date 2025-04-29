@@ -1,7 +1,6 @@
 install:
 	uv sync
-	uv sync --group=dev
-
+	uv pip install ruff pytest black
 
 build:
 	uv build
