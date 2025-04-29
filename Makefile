@@ -1,5 +1,7 @@
 install:
 	uv sync
+	uv sync --group=dev
+
 
 build:
 	uv build
