@@ -9,27 +9,39 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
-        # make depends on uv
+          python-version: "3.12"
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Create .venv
+        run: uv venv
+
       - name: Install dependencies
         run: |
-          pip install uv
+          . .venv/bin/activate
           make install
-      - name: Run linter and pytest
+
+      - name: Run lint and test
         run: |
+          . .venv/bin/activate
           make check
+
       - name: Run test coverage
         run: |
-          make test-coverage
+          . .venv/bin/activate
+          make coverage
+
       - name: SonarQubeScan
         uses: SonarSource/sonarqube-scan-action@v5
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=hexlet-boilerplates_python-package
-            -Dsonar.organization=hexlet-boilerplates
+            -Dsonar.projectKey=artmazloev_python-project-50
+            -Dsonar.organization=artmazloev
             -Dsonar.python.coverage.reportPaths=coverage.xml
