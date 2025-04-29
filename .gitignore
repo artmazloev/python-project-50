@@ -11,3 +11,7 @@ coverage.xml
 .yml
 .yaml
 .cast
+DOCUMENTATION.md
+DOCUMENTATION_tmp.html
+TESTS.html
+TESTS.md
