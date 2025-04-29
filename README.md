@@ -1,9 +1,15 @@
-### Hexlet tests and linter status:
-[![Actions Status]()
+[![Actions Status](https://github.com/artmazloev/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/artmazloev/python-project-50/actions)
 
-[![Python CI]()
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=artmazloev_python-project-50&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=artmazloev_python-project-50)
 
-[![Quality Gate Status]()
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=artmazloev_python-project-50&metric=bugs)](https://sonarcloud.io/summary/new_code?id=artmazloev_python-project-50)
+
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=artmazloev_python-project-50&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=artmazloev_python-project-50)
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=artmazloev_python-project-50&metric=coverage)](https://sonarcloud.io/summary/new_code?id=artmazloev_python-project-50)
+
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=artmazloev_python-project-50&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=artmazloev_python-project-50)
+
 
 # gendiff
 
